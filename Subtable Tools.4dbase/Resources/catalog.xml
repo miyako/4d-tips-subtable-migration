@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base uuid="D51C0EB331DA4C89B1F2D71C057835BF">
+	<table name="PARENT" id="1" uuid="CEEDE20A1B454413B477C728A02176D9">
+		<field name="CHILD" id="1" uuid="BD369BABFBA5454BBCFEBEB531BAA7BE" type="15" never_null="true"/>
+		<table_extra>
+			<editor_table_info>
+				<coordinates left="30" top="20" width="88" height="152"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PARENT_CHILD" id="2" uuid="D2BB69F0891248B79E4779C52983854F">
+		<field name="id_added_by_converter" type="16" uuid="7328B9C867164DCDB830B96796DF225B">
+			<field_extra visible="false" enterable="false" modifiable="false"/>
+		</field>
+		<table_extra>
+			<editor_table_info>
+				<coordinates left="193" top="81" width="55" height="106"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation name_Nto1="CHILD_subtable_1_id_added_by_converter" name_1toN="id_added_by_converter_subtable_1_CHILD" uuid="91EEF084174C47C48E9D83F96CAA48DE" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="7328B9C867164DCDB830B96796DF225B" name="id_added_by_converter">
+				<table_ref uuid="D2BB69F0891248B79E4779C52983854F" name="PARENT_CHILD"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="BD369BABFBA5454BBCFEBEB531BAA7BE" name="CHILD">
+				<table_ref uuid="CEEDE20A1B454413B477C728A02176D9" name="PARENT"/>
+			</field_ref>
+		</related_field>
+		<relation_extra>
+			<editor_relation_info>
+				<color red="110" green="124" blue="136" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index uuid="4DD45F45E64C444085D98DB5655C4D68" kind="regular" type="7">
+		<field_ref uuid="BD369BABFBA5454BBCFEBEB531BAA7BE" name="CHILD">
+			<table_ref uuid="CEEDE20A1B454413B477C728A02176D9" name="PARENT"/>
+		</field_ref>
+	</index>
+	<index uuid="A44AC653F27A46C48A271CC183267F8B" kind="regular" type="3">
+		<field_ref uuid="7328B9C867164DCDB830B96796DF225B" name="id_added_by_converter">
+			<table_ref uuid="D2BB69F0891248B79E4779C52983854F" name="PARENT_CHILD"/>
+		</field_ref>
+	</index>
+</base>

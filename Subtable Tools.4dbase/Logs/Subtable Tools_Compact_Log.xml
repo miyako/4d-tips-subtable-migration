@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<verifylog operation="Compact" name="Subtable Tools" structure="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Subtable Tools.4DB" data="" os="Mac OS X (10.6.7)">
+<start_timer time="2011-05-13T17:12:52+09:00"/>
+<step title="Opening the database in maintenance mode">
+</step>
+<step title="Compact">
+	<step title="Compacting auto sequence number definitions">
+	</step>
+	<step title="Loading data tables">
+		<step title="Compacting data table headers">
+		</step>
+	</step>
+	<step title="Compacting BLOBs in table Resources">
+	</step>
+	<step title="Compacting records in table Resources">
+	</step>
+	<step title="Compacting BLOBs in table [Table#2]">
+	</step>
+	<step title="Compacting records in table [Table#2]">
+	</step>
+	<step title="Compacting index definitions">
+		<step title="Compacting index B-tree Index 0 on kind (TYPE only)">
+			<step title="Compacting index page addresses on B-tree Index 0 on kind (TYPE only)">
+			</step>
+			<step title="Compacting index pages on B-tree Index 0 on kind (TYPE only)">
+			</step>
+		</step>
+		<step title="Compacting index B-tree Index 1 on stamp (stamp)">
+			<step title="Compacting index page addresses on B-tree Index 1 on stamp (stamp)">
+			</step>
+			<step title="Compacting index pages on B-tree Index 1 on stamp (stamp)">
+			</step>
+		</step>
+		<step title="Compacting index B-tree Index 2 on kind , id (TYPE and ID)">
+			<step title="Compacting index page addresses on B-tree Index 2 on kind , id (TYPE and ID)">
+			</step>
+			<step title="Compacting index pages on B-tree Index 2 on kind , id (TYPE and ID)">
+			</step>
+		</step>
+	</step>
+	<step title="Compacting data table definitions">
+	</step>
+	<step title="Compacting relation definitions">
+	</step>
+	<step title="Compacting backup index definitions">
+	</step>
+	<step title="Move original">
+<move from="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Subtable Tools.4DB" to="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Replaced Files (Compacting) 2011-05-13 17-12-52:Subtable Tools.4DB">
+</move>	</step>
+	<step title="Move the new file to the original location">
+<move from="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Replaced Files (Compacting) 2011-05-13 17-12-52:_Subtable Tools_compacted.4DB" to="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Subtable Tools.4DB">
+</move>	</step>
+	<step title="Move original index">
+<move from="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Subtable Tools.4DIndy" to="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Replaced Files (Compacting) 2011-05-13 17-12-52:Subtable Tools.4DIndy">
+</move>	</step>
+	<step title="Move the new index file to the original location">
+<move from="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Replaced Files (Compacting) 2011-05-13 17-12-52:_Subtable Tools_compacted.4DIndy" to="Macintosh HD:Users:miyako:Desktop:Subtable Tools.4dbase:Subtable Tools.4DIndy">
+</move>	</step>
+</step>
+<stop_timer time="2011-05-13T17:12:53+09:00" success="true" user_canceled="false"/>
+</verifylog>
