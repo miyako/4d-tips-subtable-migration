@@ -22,7 +22,7 @@ There are a few critical conditions the original database must meet.
 
 This v12 structure contains 1 table, which has a converted subtable field (originally created with 4D 2004). It has one dialog, on which you can navigate, query, sort, create, and delete subrecords. The "special relation" between the two tables, added by the converter, is unchanged. The goal is to cut this link permanently, without losing any of the existing features in the application.
 
-![](dialog.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/dialog.png)
 
 Many of the deprecated commands are used in the dialog;
 
@@ -58,11 +58,11 @@ If you have a subform widget placed on the parent form's input form, it's source
 
 ***Before***
 
-![](before.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/before.png)
 
 ***After***
 
-![](after.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/after.png)
 
 If you change the subform's data source from the subtable field to the converted table, you will notice that the correct output form is displayed on the parent form, but its content will no longer reflect the current subselection. 
 
@@ -234,7 +234,7 @@ First, run the dialog and confirm that the "First Record" button is not working 
 
 Return to design mode, select "Find in Design" from the Edit menu.
 
-![](find_in_design.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/find_in_design.png)
 
 ***Note***: Global search of project methods and variables can be started directly from the Method Editor's context menu. However, whether one can then proceed to global replacement depends on the context in which the dialog was called. Since we want to perform a replace of Language Expressions and/or Text (notably commands), we need to open the dialog from the edit Menu.
 
@@ -242,19 +242,19 @@ Select "Text" as the kind of object to find, type "FIRST RECORD([Table1])" as th
 
 All matching occurrences are presented.
 
-![](found.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/found.png)
 
 Click the cogwheel button at the bottom of the window and select "Replace in content".
 
-![](replace_in_content.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/replace_in_content.png)
 
 Enter "TABLE_FIRST_RECORD("[Table1]")" as the replacement text and click OK.
 
-![](replace.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/replace.png)
 
 All matching occurrences are replaced.
 
-![](replaced.png)
+![](https://github.com/miyako/4d-tips-subtable-migration/blob/master/images/replaced.png)
 
 Run the dialog again and confirm that the "First Record" button now has effect on the ex-subtable.
 
@@ -522,7 +522,7 @@ DUPLICATE RECORD([Table1])
 replace with: TABLE_DUPLICATE_RECORD ("[Table1]")
 ```
 
-***Note***: In compatibility mode, duplicating the parent record no longer created copies of the subrecords associated with that record. [http://kb.4d.com/search/assetid=47983 Upgrading Subtables to 4D v11 SQL] explains how one could duplicate subrecords using 4D v11 SQL. The following explanation takes advantage of the new v12 feature that is SQL EXPORT SELECTION.
+***Note***: In compatibility mode, duplicating the parent record no longer created copies of the subrecords associated with that record. [Upgrading Subtables to 4D v11 SQL](http://kb.4d.com/search/assetid=47983) explains how one could duplicate subrecords using 4D v11 SQL. The following explanation takes advantage of the new v12 feature that is SQL EXPORT SELECTION.
 
 ***Appendix i - SEND RECORD and RECEIVE RECORD***
 
