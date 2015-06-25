@@ -10,7 +10,7 @@ This article explores how one can procedurally depart from the use of subtables 
 
 There are a few critical conditions the original database must meet.
 
-1.	That there are only single level subtables. If the structure contains multi level subtables, please refer to Technical Note [http://kb.4d.com/search/assetid=47983 Upgrading Subtables to 4D v11 SQL] on how to deal with such legacy assets.
+1.	That there are only single level subtables. If the structure contains multi level subtables, please refer to Technical Note [Upgrading Subtables to 4D v11 SQL](http://kb.4d.com/search/assetid=47983) on how to deal with such legacy assets.
 
 2.	The the converted subtable name is unchanged. When a subtable field named [PARENT]CHILD is converted to v11 or above, it we automatically be transformed to a regular table with the name [PARENT_CHILD]. Our strategy depends on this specific naming convention, so it should remain unchanged for the operation to succeed.
 
